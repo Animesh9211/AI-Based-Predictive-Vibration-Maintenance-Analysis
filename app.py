@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 import joblib  # To load the scaler
 
 # Load the trained model
-model = load_model("ann_model.h5")
+model = load_model("severity_ann_model.h5")
 
 # Load the scaler used for preprocessing
 scaler = joblib.load("scaler.pkl")
