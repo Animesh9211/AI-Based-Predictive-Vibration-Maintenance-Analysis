@@ -27,7 +27,7 @@ input_data_scaled = scaler.transform(input_data)
 if st.button("Predict"):
     prediction = model.predict(input_data_scaled)
     predicted_class = np.argmax(prediction)
-    if(val1==0 & bal2==0 & val3==0):
+    if(val1==0.00 & val2==0.00 & val3==0.00):
         st.write(f"Predicted Class: 0")
     else:
         st.write(f"Predicted Class: {predicted_class}")
