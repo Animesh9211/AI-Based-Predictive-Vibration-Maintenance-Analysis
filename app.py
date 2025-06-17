@@ -15,9 +15,9 @@ st.title("ANN Model Prediction App")
 st.write("Enter the input values to predict the output.")
 
 # Input fields for user
-val1 = st.number_input("Enter value for Feature 1")
-val2 = st.number_input("Enter value for Feature 2")
-val3 = st.number_input("Enter value for Feature 3")
+val1 = st.number_input("Enter value for Acceleration in X axis")
+val2 = st.number_input("Enter value for Acceleration in Y axis")
+val3 = st.number_input("Enter value for Acceleration in Z axis")
 
 # Convert input to NumPy array and scale
 input_data = np.array([[val1, val2, val3]])
